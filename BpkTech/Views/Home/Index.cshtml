@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "User Details";
+}
+
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title text-center">
+                    <h4 class="title">User details</h4>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="txtFirstName" class="cols-sm-2 control-label">First Name</label>
+                    <input type="text" class="form-control" id="txtFirstName" placeholder="First Name" />
+                </div>
+                <div class="form-group">
+                    <label for="txtLastName" class="cols-sm-2 control-label">Last Name</label>
+                    <input type="text" class="form-control" id="txtLastName" placeholder="Last Name" />
+                </div>
+
+                <div class="form-group">
+                    <label for="txtCity" class="cols-sm-2 control-label">City</label>
+                    <input type="text" class="form-control" id="txtCity" placeholder="City" />
+                </div>
+                <div class="form-group">
+                    <label for="txtPhoneNumber" class="cols-sm-2 control-label">Phone Number</label>
+                    <input type="text" class="form-control" id="txtPhoneNumber" placeholder="Phone Number" />
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div class="form-group ">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="btnSave">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel-body" id="tblUsers">
+    <table id="users" class="table table-striped table-bordered table-hover nowrap" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>City</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+
+    </table>
+</div>
+<script src="~/js/user.js" asp-append-version="true"></script>
